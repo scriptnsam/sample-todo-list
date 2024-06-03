@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="md:w-[80%] m-auto">
+        <div class="text-center bg-orange-600 text-[#ebebeb] font-semibold h-20">
+         <h3 class="text-[40px]">Todo List</h3>
+        </div>
+
+        <!-- sction for the input field -->
+        <form class="mt-10 flex items-center justify-center max-sm:w-[80%] h-[50px] m-auto" autocomplete="off" onsubmit="addTodo(event)">
+                <div class=" rounded-sm bg-white w-[70%] h-[100%]">
+                    <input id="inputText" class="w-[100%] h-[100%] text-gray-400 font-mono input bg-transparent px-3" placeholder="Add todo..." type="text" required>
+                </div>
+                <div class=" bg-gray-200 w-[30%] h-[100%]">
+                    <button class="w-[100%] h-[100%] hover:bg-gray-500 duration-200 hover:text-gray-100 text-xl" type="submit">Add</button>
+                </div>
+        </form>
+
+        <br><br>
+        
+        <hr>
+
+        <!-- section to display the lists of todos -->
+        <div class="bg-white mt-4">
+            <p id="clear-button" class=" hidden w-fit cursor-pointer ml-auto mr-4 text-right text-slate-700 font-medium hover:underline" onclick="clearAllTodos()">Clear all</p>
+            <div class="py-5 bg-white" id="todo-area">
+                <!-- <div class="each-div">
+                    <p class="list-title">Form a metal</p><button class="close-button">&times;</button>
+                </div>
+                
+                <div class="each-div">
+                    <p class="list-title">Form a metal</p><button class="close-button">&times;</button>
+                </div>
+                <div class="each-div">
+                    <p class="list-title">Form a metal</p><button class="close-button">&times;</button>
+                </div>
+                <div class="each-div">
+                    <p class="list-title">Form a metal</p><button class="close-button">&times;</button>
+                </div>
+                <div class="each-div">
+                    <p class="list-title">Form a metal</p><button class="close-button">&times;</button>
+                </div>
+                <div class="each-div">
+                    <p class="list-title">Form a metal</p><button class="close-button">&times;</button>
+                </div>
+                <div class="each-div">
+                    <p class="list-title">Form a metal</p><button class="close-button">&times;</button>
+                </div> -->
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./scripts/main.js"></script> -->
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

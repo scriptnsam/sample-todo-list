@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-[#b7b7b7]
+}
+
+body::-webkit-scrollbar{
+    @apply w-[5px]
+}
+
+body::-webkit-scrollbar-thumb{
+    @apply bg-orange-600
+}
+
+.input:focus{
+    @apply outline-dotted outline-orange-600;
+}
+
+.close-button{
+    @apply text-center md:w-[10%] max-md:w-[15%] bg-red-500 p-3 rounded text-gray-100 hover:animate-pulse hover:bg-red-400 duration-200 text-xl;
+}
+
+.list-title{
+    @apply border rounded border-gray-500 p-3 text-gray-700 font-mono w-[80%] hover:shadow-md duration-200;
+}
+
+.each-div{
+    @apply flex items-center justify-between mx-5 my-3;
+}
+
+.no-todo{
+    @apply text-center text-gray-400 font-normal
+}
+
+.date{
+    @apply text-gray-400 font-thin text-sm;
+}
